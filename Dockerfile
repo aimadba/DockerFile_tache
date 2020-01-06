@@ -1,7 +1,7 @@
 FROM alpine:3.7
 
-RUN apt-get update
+RUN apk update
 
-RUN apt-get install -y apache2
+RUN apt add -y apache2
 
 ADD tache.py /tache.py
